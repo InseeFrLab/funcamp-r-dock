@@ -22,4 +22,5 @@ RUN Rscript -e 'remotes::install_version(upgrade="never",package = "rio", versio
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "shinyAce", version = "0.4.0")'
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "roxygen2", version = "6.1.1")'
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "DescTools", version = "0.99.40")'
+RUN Rscript -e 'remotes::install_version(upgrade="never",package = "rsdmx", version = "0.6")'
 EXPOSE 3838
