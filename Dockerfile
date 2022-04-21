@@ -23,4 +23,9 @@ RUN Rscript -e 'remotes::install_version(upgrade="never",package = "shinyAce", v
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "roxygen2", version = "6.1.1")'
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "DescTools", version = "0.99.40")'
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "rsdmx", version = "0.6")'
+RUN Rscript -e 'remotes::install_version(upgrade="never",package = "ggmosaic", version = "0.3.3")'
+RUN Rscript -e 'remotes::install_version(upgrade="never",package = "GGally", version = "2.1.2")'
+RUN Rscript -e 'remotes::install_version(upgrade="never",package = "plotly", version = "4.9.2.2")'
+RUN Rscript -e 'remotes::install_version(upgrade="never",package = "Hmisc", version = "4.4.2")'
+RUN Rscript -e 'remotes::install_version(upgrade="never",package = "devtools", version = "2.4.3")'
 EXPOSE 3838
