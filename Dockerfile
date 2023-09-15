@@ -3,7 +3,7 @@ RUN apt-get update && apt-get install -y  git-core make pandoc pandoc-citeproc l
 RUN echo "options(repos = c(CRAN = 'https://cran.rstudio.com/'), download.file.method = 'libcurl')" >> /usr/local/lib/R/etc/Rprofile.site
 RUN R -e 'install.packages("remotes")'
 RUN R -e 'remotes::install_github("r-lib/remotes", ref = "97bbf81")'
-RUN Rscript -e 'remotes::install_github("rstudio/parsons",upgrade="never")'
+RUN Rscript -e 'remotes::install_github("rstudio/parsons", ref = "42d0bfb")'
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "tidyverse", version = "1.2.1")'
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "learnr", version = "0.10.0")'
 RUN Rscript -e 'remotes::install_version(upgrade="never",package = "magrittr", version = "1.5")'
